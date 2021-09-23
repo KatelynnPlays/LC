@@ -3,13 +3,31 @@
   <head>
     
   </head>
+  <style>
+    img {
+      width: 300px;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+    p{
+      text-align: center;  
+    }
+    
+  </style>
   <body>
-    <Label for="username">Username:</Label><br/>
-    <input id="username">
+    <img class="center" src="https://cdn.glitch.com/b2651603-0296-4779-9f05-2a4b282e9e13%2FR.png?v=1632403603294">
     <br/>
+    <p>
+      Username:
+    </p>
+    <input id="username" class="center">
     <br/>
     <Label for="password">Password: </Label><br/>
-    <input type="Password"id="password">
+    <input type="Password"id="password" class="center">
     <br/>
     <br/>
     <button onclick="submit()" id="submit">
@@ -22,6 +40,6 @@
   function submit(){
     alert("Login Successful");
     document.getElementById("username").value = "";
-    document.getElementById("password").value = ""
+    document.getElementById("password").value = "";
   }
 </script>
