@@ -39,11 +39,20 @@
 
 <script>
   function submit(){
-    var password=document.
-    if()
-    alert("Register Successful");
-    document.getElementById("username").value = "";
-    document.getElementById("password").value = "";
-    document.getElementById("repeat").value = "";
+    var password=document.getElementById("password").value;
+    var repeat=document.getElementById("repeat").value;
+    if(password===repeat){
+      alert("Register Successful");
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+      document.getElementById("repeat").value = "";
+    }
+    else{
+      alert("Passwords don't match")
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+      document.getElementById("repeat").value = "";
+      document.getElementById("password").style.border-color
+    }
   }
 </script>
