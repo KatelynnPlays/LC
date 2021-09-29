@@ -16,15 +16,20 @@
     Label{
       text-align: center;  
     }
-    
+    H3{
+      text-align: center;
+      font-family: Verdana;
+      color: Blue;
+    }
   </style>
   <body>
     <img class="center" src="https://cdn.glitch.com/b2651603-0296-4779-9f05-2a4b282e9e13%2FR.png?v=1632403603294">
     <br/>
+    <H3>Register Here</H3>
     <input id="username" class="center" placeholder="Username">
     <br/>
     <input type="Password"id="password" class="center" placeholder="Password">
-    <br/>
+    <input type="Password"id="repeat" class="center" placeholder="Repeat Password">
     <br/>
     <button onclick="submit()" id="submit" class="center">
       Submit
@@ -34,8 +39,11 @@
 
 <script>
   function submit(){
-    alert("Login Successful");
+    var password=document.
+    if()
+    alert("Register Successful");
     document.getElementById("username").value = "";
     document.getElementById("password").value = "";
+    document.getElementById("repeat").value = "";
   }
 </script>
